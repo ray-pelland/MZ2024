@@ -21,6 +21,10 @@ Options All -Indexes
 	RewriteCond %{REQUEST_URI} (.+)/$
       RewriteRule ^ %1 [L,R=301]
 
+	# Possible method for elimiating "/public/" in URLs to MZ
+	# RewriteCond %{REQUEST_URI} !^/public/
+	# RewriteRule ^(.*)$ /public/$1 [L,QSA]
+
 	# Rewrite "www.example.com -> example.com"
 	RewriteCond %{HTTPS} !=on
 	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
