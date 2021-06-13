@@ -24,7 +24,7 @@ define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 chdir(__DIR__);
 // Load our paths config file
 // This is the line that might need to be changed, depending on your folder structure.
-require realpath(FCPATH . '/app/Config/Paths.php') ?: FCPATH . '/app/Config/Paths.php';
+require realpath(FCPATH . 'app/Config/Paths.php') ?: FCPATH . 'app/Config/Paths.php';
 //echo ("OK2a ".realpath(FCPATH . '../app/Config/Paths.php')."*".str_repeat('&nbsp;', 10)."realpath() to Congfig/Paths.php<br><br>");
 //echo ("OK2b ".FCPATH . '../app/Config/Paths.php')."*".str_repeat('&nbsp;', 10)."not realpath() to Congfig/Paths.php<br><br>";
 //echo ("OK2c ".realpath(FCPATH . '../app/Config/Paths.php') ?: FCPATH . '../app/Config/Paths.php'); echo "*".str_repeat('&nbsp;', 10)."Elvis way to Config/Paths.php<br><br>";

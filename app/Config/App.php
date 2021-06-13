@@ -23,7 +23,8 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost:80/CI4vh/MZ/';
+	public $baseURL = 'http://mz.localhost';
+	// public $baseURL = 'https://muztash.com';
 
 	/**
 	 * --------------------------------------------------------------------------

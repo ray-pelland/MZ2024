@@ -220,6 +220,8 @@
 
 		<h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
+		<h3>Coming to you from C:/CI4vh/MZ via virtual localhost!</h3>
+
 		<h2>The small framework with powerful features</h2>
 
 	</div>
