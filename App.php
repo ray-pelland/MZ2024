@@ -23,8 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://mz.localhost';
-	// public $baseURL = 'https://muztash.com';
+	public $baseURL = 'https://muztash.com';
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -175,7 +174,7 @@ class App extends BaseConfig
 	 *
 	 * @var integer
 	 */
-	public $sessionExpiration = 0;
+	public $sessionExpiration = 7200;
 
 	/**
 	 * --------------------------------------------------------------------------
