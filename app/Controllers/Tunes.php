@@ -19,4 +19,9 @@ class Tunes extends BaseController
         //dd($data);
         return view('tunes/show', ['tunes' => $data]) ;
     }
+
+    public function showLogoutMessage()
+    {
+        return redirect()->to('/')->with('info', 'Logout successful');
+    }
 }

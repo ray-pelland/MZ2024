@@ -4,11 +4,7 @@
 
 <?= $this->section("content"); ?>
 
-    <h1>Welcome</h1>
-
-    <a href="<?= site_url("/signup/new"); ?>">Sign up</a>
-
-
+    <h1>Welcome to Muztash</h1>
 
     <?php if (current_user()): ?>
 
@@ -20,10 +16,12 @@
 
     <?php else: ?>
 
-        <p>User is not logged in </p>
+        <p>You are not logged in. There is no current session. </p>
 
-        <a href="<?= site_url("/login"); ?>">Log in</a>
+        <a href="<?= site_url("/login"); ?>">Log in to open a new Muztash session.</a>
 
     <?php endif; ?>
+
+    <a href="<?= site_url("/signup/new"); ?>"><br><br>Sign up to create a new Muztash account.</a>
 
 <?= $this->endSection(); ?>
