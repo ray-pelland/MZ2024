@@ -15,7 +15,7 @@ class Tunes extends BaseController
     public function getMemTunes($memID)
     {
         $model = new \App\Models\TunesModel;
-        $data = $model->select('title, tuneSheet')->orderBy('title', 'ASC')->where('memID', $memID)->findAll(); // array of tunes
+        $data = $model->select('tuneID, memID, title, tagMask1, tagMask2, tagMask3, tuneSheet')->orderBy('title', 'ASC')->where('memID', $memID)->findAll(); // array of tunes
         //dd($data);
         return view('tunes/show', ['tunes' => $data]) ;
     }
