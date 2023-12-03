@@ -24,4 +24,10 @@ class Tunes extends BaseController
     {
         return redirect()->to('/')->with('info', 'Logout successful');
     }
+
+    public function saveTs($tID) {
+        $model = new \App\Models\TunesModel;
+        $savedTs=1;
+
+    }
 }

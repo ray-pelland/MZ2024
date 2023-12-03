@@ -20,7 +20,7 @@ class Login extends BaseController
         }
     }
 
-    public function delete() {
+    public function delete() {  // delete the current session
         $auth = service('auth');
         $auth->logout();
         return redirect()->to('/Login/showLogoutMessage');
